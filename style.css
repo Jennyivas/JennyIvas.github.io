@@ -1,0 +1,233 @@
+body::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
+    background-color: rgba(20, 20, 20, 0.0);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(100, 40, 40);
+  outline: 1px solid grey;
+  border-radius: 50px;
+}
+body {
+    background-color: #FEFEE;
+    background-image: url("imgs/solva.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    margin: 0px 0px 0px 0px;
+}
+header {
+    Background: white;
+    width: 100%;
+    Margin-top: 0px;
+    padding-top: 0px;
+    position: fixed;
+    z-index: 1;
+}
+#container {
+   width: 1270px;
+}
+h1 {
+   color: rgba(120, 60, 60, 0.9);
+   font-size: 300%;
+   font-family: "cambria", "baskerville", "calibri", serif;
+   font-variant: small-caps;
+   letter-spacing: 4px;
+   margin-top: 0px;
+   margin-bottom: 5px;
+}
+h2 {
+   color: rgba(160, 85, 85, 0.9);
+   font-size: 200%;
+   font-family: "cambria", "baskerville", "calibri", serif;
+   font-variant: small-caps;
+   letter-spacing: 1.5px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+h3 {
+   color: white;
+   font-size: 150%;
+   font-family: serif;
+   letter-spacing: 3px;
+   font-variant: small-caps;
+   text-shadow: 2px 2px #777;
+   padding-Top: 0px;
+   margin-top: 10px;
+   padding-bottom: 0px;
+   margin-bottom: 20px;
+}
+h5 {
+  color: rgb(90, 30, 30);
+  font-size: 1.50em;
+  text-decoration: none;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  font-family: "cambria", "baskerville", "calibri";
+  margin-bottom: 7px;
+  margin-top: -3px;
+}
+table {
+   background: rgba(120, 60, 60, 0.5);
+   width: 100%;
+   height: 40px;
+}
+td {
+   background-size: cover;
+   background-repeat: no-repeat;
+   spacing-left: 10px;
+   spacing-right: 10px;
+}
+td:hover {
+   background: rgba(120, 60, 60, 0.5);
+}
+#content {
+   width: 73%;
+   background: rgba(400, 400, 400, 1.0);
+   Margin-top: 10px;
+   float: left;
+   margin-right: 75%
+   vertical-align: top;
+   margin-left: 15px;
+   z-index: -1;
+}
+#sidebar {
+   width: 23%;
+   background: rgba(140, 140, 140, 1.0);
+   padding-top: 5px;
+   margin-left: 76%;
+   margin-right: 6px;
+   vertical-align: top;
+   margin-top: 30px;
+   z-index: -1;
+}
+p {
+   color: #FFF;
+  font-size: 1.10em;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 5px;
+}
+a {
+   color: white;
+   text-decoration: none;
+   font-size: 1.00em;
+   font-variant: small-caps;
+   letter-spacing: 5px;
+}
+a:visited {
+   color: white;
+   text-decoration: none;
+}
+a:hover {
+   color: white;
+   text-decoration: none;
+}
+a:active {
+   color: white;
+   text-decoration: none;
+}
+hr {
+   width: 90%;
+   opacity: 0.5;
+   z-index: 0;
+}
+h4 {
+  color: rgb(90, 30, 30);
+  font-size: 1.30em;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-family: "cambria", "baskerville", "calibri";
+}
+li {
+  color: #744;
+  font-size: 1.30em;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 10px;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+}
+li.italic {
+  color: #744;
+  font-size: 1.00em;
+  text-decoration: none;
+  font-weight: normal;
+  font-variant: small-caps;
+}
+blockquote {
+  background: rgba(240, 240, 240, 0.0);
+  border-left: 5px solid rgb(120, 60, 60);
+  margin: 0.5em 10px;
+  padding: 0.5em 10px;
+}
+blockquote:before {
+  color: rgb(120, 60, 60);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  font-variant: small-caps;
+  font-size: 1.50em;
+  color: rgb(120, 60, 60);
+}
+iframe {
+   border: none;
+   width: 100%;
+   height: 355px;
+}
+.fadein img {
+    position:absolute;
+    left:0px;
+    right: 0px;
+    width: 870px;
+    height: 256px;
+    z-index: 0;
+    margin-left: 45px;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 12s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1.0;}
+    33% {opacity: 1.0;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1.0;}
+    33% {opacity: 1.0;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f1 {
+    background-color: lightblue;
+}
+#f2 {
+    -webkit-animation-delay: -8s;
+    background-color: rgb(255,89,0);
+}
+#f3 {
+    -webkit-animation-delay: -8s;
+    background-color: lightgreen;
+}

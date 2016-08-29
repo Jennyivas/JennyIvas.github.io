@@ -1,0 +1,7 @@
+FROM: Rusty Monkey 
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="apple-touch-icon" href="imgs/icons/favicon.png"/>
+</head>
+<body>
+</body>

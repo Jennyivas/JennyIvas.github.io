@@ -1,0 +1,73 @@
+body::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px white;
+    background-color: white;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid white;
+  border-radius: 50px;
+}
+body {
+    background-image: url("imgs/music.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    margin: 0px 0px 0px 0px;
+}
+h1 {
+   color: rgba(160, 85, 85, 0.9);
+   font-size: 300%;
+   font-family: "cambria", "baskerville", "calibri", serif;
+   font-variant: small-caps;
+   letter-spacing: 4px;
+   margin-top: 0px;
+   margin-bottom: 5px;
+   text-shadow: 2px 2px #DEDEDE;
+}
+h5 {
+  color: rgb(90, 30, 30);
+  font-size: 1.50em;
+  text-decoration: none;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  font-family: "cambria", "baskerville", "calibri";
+  margin-bottom: 7px;
+  margin-top: -32px;
+}
+hr {
+   margin-top: 1px;
+   margin-bottom: 5px;
+   width: 48%;
+   opacity: 0.7;
+}
+img.sc {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+img.sc:hover {
+-webkit-box-shadow: 0px 0px 15px 5px rgb(255,89,0);
+-moz-box-shadow: 0px 0px 15px 5px rgb(255,89,0);
+box-shadow: 0px 0px 15px 5px rgb(255,89,0);
+}
+img.abrsm {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+img.abrsm:hover {
+-webkit-box-shadow: 0px 0px 15px 5px rgb(238,50,38);
+-moz-box-shadow: 0px 0px 15px 5px rgb(238,50,38);
+box-shadow: 0px 0px 15px 5px rgb(238,50,38);
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Jenny Ivas is a piano teacher based in Nottingham offering piano lessons for students of all ages. Students can either learn with graded exams or simply by the pleasure of learning whatever they want to learn.">
+<meta name="author" content="Aaron Connelly">
+<meta name="keywords" content="Jenny, Ivas, Piano, teacher, tuition, ABRSM, nottingham, local, classical, student, exam, exams">
+<link rel="shortcut icon" href="imgs/icons/favicon.ico">
+<link rel="apple-touch-icon" href="imgs/icons/favicon.png"/>
+<title>Jenny Ivas - Piano Teacher</title>
+<!--googledrive.com/host/0Bx4QLi7gzNbddlRUMWhLdkJ5ZmM-->
+<!--goo.gl/js47c5-->
+<!--fade images src http://stackoverflow.com/questions/17954874/cross-fade-between-images-with-css-in-loop-->
+<style>
+#playlist {
+   background: rgba(105, 95, 90, 0.7);
+   width: 600px;
+   padding: 10px;
+   margin-bottom: 0px;
+}
+audio {
+   background: rgba(120, 60, 60, 0.8);
+   width: 620px;
+   margin-top: 0px;
+}
+body {
+    background-color: linen;    
+    background-image: url("imgs/solva.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    margin: 0px 0px 0px 0px;
+}
+header {
+    Background: #FFG;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+h1 {
+   color: rgba(120, 60, 60, 0.9);
+   font-size: 300%;
+   font-family: "cambria", "baskerville", "calibri", serif;
+   font-variant: small-caps;
+   letter-spacing: 4px;
+   margin-bottom: 5px;
+   margin-top: 0px;
+}
+h5 {
+  color: rgb(90, 30, 30);
+  font-size: 1.50em;
+  text-decoration: none;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  font-family: "cambria", "baskerville", "calibri";
+  margin-bottom: 10px;
+  margin-top: -5px;
+}
+table {
+   background: rgba(50, 30, 30, 0.7);
+   height: 400px;
+   width: 80%;
+}
+td {
+   background-size: cover;
+   background-repeat: no-repeat;
+   spacing-left: 10px;
+   spacing-right: 10px;
+}
+td:hover {
+   background: rgba(120, 60, 60, 0.5);
+}
+p {
+   color: #FFD;
+   text-decoration: none;
+   font-size: 1.00em;
+   font-variant: small-caps;
+   letter-spacing: 5px;
+   margin-top: 1px;
+   margin-bottom: 1px;
+}
+hr {
+   color: white;
+   margin-top: 1px;
+   margin-bottom: 5px;
+}
+a {
+   color: white;
+   text-decoration: none;
+   font-size: 1.40em;
+   font-variant: small-caps;
+   letter-spacing: 5px;
+}
+a:visited {
+   color: white;
+   text-decoration: none;
+}
+a:hover {
+   color: white;
+   text-decoration: none;
+}
+a:active {
+   color: white;
+   text-decoration: none;
+}
+#subhead {
+   color: linen;
+   text-decoration: none;
+   font-size: 0.80em;
+   letter-spacing: 3px;
+   margin-bottom: 1px;
+}
+li.a {
+   color: white;
+   text-decoration: none;
+   font-size: 1.0em;
+   font-variant: small-caps;
+   letter-spacing: 5px;
+}
+</style>
+<script>
+var audio;
+var playlist;
+var tracks;
+var current;
+
+init();
+function init(){
+    current = 0;
+    audio = $('audio');
+    playlist = $('#playlist');
+    tracks = playlist.find('li a');
+    len = tracks.length - 1;
+    audio[0].volume = .10;
+    audio[0].play();
+    playlist.find('a').click(function(e){
+        e.preventDefault();
+        link = $(this);
+        current = link.parent().index();
+        run(link, audio[0]);
+    });
+    audio[0].addEventListener('ended',function(e){
+        current++;
+        if(current == len){
+            current = 0;
+            link = playlist.find('a')[0];
+        }else{
+            link = playlist.find('a')[current];    
+        }
+        run($(link),audio[0]);
+    });
+}
+function run(link, player){
+        player.src = link.attr('href');
+        par = link.parent();
+        par.addClass('active').siblings().removeClass('active');
+        audio[0].load();
+        audio[0].play();
+}
+</script>
+</head>
+
+<body>
+
+<header>
+<center>
+<h1>Jenny Ivas</h1><h5>Piano Tuition In Nottingham</h5>
+    <ul id="playlist" style="list-style: none;">
+        <li><p>Listen to Jenny and her students</p></li>
+<hr>
+        <li class="active"><a href="tracks/mozart%20sonata.wav" style="font-size:1.00em;"">Sonata Facile K.545 mvt. 1 - Mozart</a>
+        <br><p><div id="subhead">Performed by Aaron Connelly</div></p></li>
+
+    </ul>
+    <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+        <source type="audio/mp3" src="tracks/mozart sonata.wav">
+        Sorry, your browser does not support HTML5 audio.
+    </audio>
+
+</center></header>
+<br>
+<center>
+<table>
+<tr>
+<td width="50%" background="imgs/piano.jpg"><center><h3><a href="home.html" target="_blank">Home</a></center></h3></td>
+<td width="50%" background="imgs/piano 2.jpg"><center><h3><a href="student exams.html" target="_blank">Student Exams</a></center></h3></td>
+</tr> <tr>
+<td width="50%" background="imgs/piano 3.jpg"><center><h3><a href="about me.html" target="_blank">About Me</a></center></h3></td>
+<td width="50%" background="imgs/piano 4.jpg"><center><h3><a href="Contact.html" target="_blank">Contact</a></center></h3></td>
+</tr>
+</table></center>
+
+</body>
+</html>
