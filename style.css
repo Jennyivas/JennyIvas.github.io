@@ -1,23 +1,5 @@
-body::-webkit-scrollbar {
-    width: 8px;
-}
- 
-body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
-    background-color: rgba(20, 20, 20, 0.0);
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(100, 40, 40);
-  outline: 1px solid grey;
-  border-radius: 50px;
-}
 body {
     background-color: #FEFEE;
-    background-image: url("imgs/solva.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
@@ -32,7 +14,7 @@ header {
     z-index: 1;
 }
 #container {
-   width: 1270px;
+   width: 1260px;
 }
 h1 {
    color: rgba(120, 60, 60, 0.9);
@@ -91,7 +73,7 @@ td:hover {
 #content {
    width: 73%;
    background: rgba(400, 400, 400, 1.0);
-   Margin-top: 10px;
+   Margin-top: 0px;
    float: left;
    margin-right: 75%
    vertical-align: top;
@@ -105,7 +87,7 @@ td:hover {
    margin-left: 76%;
    margin-right: 6px;
    vertical-align: top;
-   margin-top: 30px;
+   margin-top: 0px;
    z-index: -1;
 }
 p {
@@ -189,14 +171,22 @@ iframe {
    width: 100%;
    height: 255px;
 }
+#banner {
+    width: 1263px;
+    height: 300px;
+   margin: 0px;
+   padding: 0px;
+   background-image: url("imgs/fadeimgs/blank.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+}
 .fadein img {
     position:absolute;
     left:0px;
     right: 0px;
-    width: 870px;
-    height: 256px;
+    width: 1260px;
+    height: 300px;
     z-index: 0;
-    margin-left: 45px;
     -webkit-animation-name: fade;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 12s;
@@ -221,13 +211,13 @@ iframe {
 }
 
 #f1 {
-    background-color: lightblue;
+    background-color: white;
 }
 #f2 {
     -webkit-animation-delay: -8s;
-    background-color: rgb(255,89,0);
+    background-color: white;
 }
 #f3 {
     -webkit-animation-delay: -8s;
-    background-color: lightgreen;
+    background-color: white;
 }
