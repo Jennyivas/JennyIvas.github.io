@@ -1,13 +1,4 @@
-body {
-    background-image: url("imgs/music.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    margin: 0px 0px 0px 0px;
-}
-h1 {
+h1.banner {
    color: rgba(160, 85, 85, 0.9);
    font-size: 300%;
    font-family: "cambria", "baskerville", "calibri", serif;
@@ -16,7 +7,7 @@ h1 {
    margin-top: 0px;
    margin-bottom: 5px;
 }
-h5 {
+h5.banner {
   color: rgb(90, 30, 30);
   font-size: 1.50em;
   text-decoration: none;
@@ -26,7 +17,7 @@ h5 {
   margin-bottom: 7px;
   margin-top: -32px;
 }
-hr {
+hr.banner {
    margin-top: 1px;
    margin-bottom: 5px;
    width: 48%;
@@ -55,4 +46,16 @@ img.abrsm:hover {
 -webkit-box-shadow: 0px 0px 15px 5px rgb(238,50,38);
 -moz-box-shadow: 0px 0px 15px 5px rgb(238,50,38);
 box-shadow: 0px 0px 15px 5px rgb(238,50,38);
+}
+img.googleplus {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+img.googleplus:hover {
+-webkit-box-shadow: 0px 0px 15px 5px rgb(201,49,28);
+-moz-box-shadow: 0px 0px 15px 5px rgb(201,49,28);
+box-shadow: 0px 0px 15px 5px rgb(201,49,28);
 }
