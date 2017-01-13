@@ -8,9 +8,8 @@
 <link rel="shortcut icon" href="imgs/icons/favicon.ico">
 <link rel="apple-touch-icon" href="imgs/icons/favicon.png"/>
 <title>Jenny Ivas - Piano Teacher</title>
-<!--googledrive.com/host/0Bx4QLi7gzNbddlRUMWhLdkJ5ZmM-->
-<!--goo.gl/js47c5-->
 <!--fade images src http://stackoverflow.com/questions/17954874/cross-fade-between-images-with-css-in-loop-->
+<!--Mobile redirect src https://css-tricks.com/snippets/javascript/redirect-mobile-devices/-->
 <style>
 #playlist {
    background: rgba(105, 95, 90, 0.7);
@@ -160,6 +159,16 @@ function run(link, player){
         par.addClass('active').siblings().removeClass('active');
         audio[0].load();
         audio[0].play();
+}
+</script>
+<script type="text/javascript">
+if (screen.width <= 699) {
+document.location = "home.html";
+}
+</script>
+<script language=javascript>
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("home.html");
 }
 </script>
 </head>
