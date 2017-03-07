@@ -8,9 +8,8 @@
 <link rel="shortcut icon" href="imgs/icons/favicon.ico">
 <link rel="apple-touch-icon" href="imgs/icons/favicon.png"/>
 <title>Jenny Ivas - Piano Teacher</title>
-<!--googledrive.com/host/0Bx4QLi7gzNbddlRUMWhLdkJ5ZmM-->
-<!--goo.gl/js47c5-->
 <!--fade images src http://stackoverflow.com/questions/17954874/cross-fade-between-images-with-css-in-loop-->
+<!--Mobile redirect src https://css-tricks.com/snippets/javascript/redirect-mobile-devices/-->
 <style>
 #playlist {
    background: rgba(105, 95, 90, 0.7);
@@ -162,6 +161,16 @@ function run(link, player){
         audio[0].play();
 }
 </script>
+<script type="text/javascript">
+if (screen.width <= 699) {
+document.location = "home.html";
+}
+</script>
+<script language=javascript>
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("home.html");
+}
+</script>
 </head>
 
 <body>
@@ -193,6 +202,24 @@ function run(link, player){
 <td width="50%" background="imgs/piano 4.jpg"><center><h3><a href="contact.html" target="_blank">Contact</a></center></h3></td>
 </tr>
 </table></center>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11186544; 
+var sc_invisible=1; 
+var sc_security="61a67807"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify
+analytics tool" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="//c.statcounter.com/11186544/0/61a67807/1/"
+alt="shopify analytics tool"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
 
 </body>
 </html>
