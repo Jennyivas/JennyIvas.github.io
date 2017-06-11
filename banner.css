@@ -1,9 +1,9 @@
 h1.banner {
    color: rgba(160, 85, 85, 0.9);
-   font-size: 300%;
-   font-family: "cambria", "baskerville", "calibri", serif;
-   font-variant: small-caps;
-   letter-spacing: 4px;
+   font-size: 430%;
+   font-family: "Edwardian Script ITC","cambria", "baskerville", "calibri", serif;
+   letter-spacing: 3px;
+   font-weight: initial;
    margin-top: 0px;
    margin-bottom: 5px;
 }
