@@ -7,120 +7,10 @@
 <meta name="keywords" content="Jenny, Ivas, Piano, teacher, tuition, ABRSM, nottingham, local, classical, student, exam, exams">
 <link rel="shortcut icon" href="imgs/icons/favicon.ico">
 <link rel="apple-touch-icon" href="imgs/icons/favicon.png"/>
+<link rel="stylesheet" type="text/css" href="Index.css">
 <title>Jenny Ivas - Piano Teacher</title>
 <!--fade images src http://stackoverflow.com/questions/17954874/cross-fade-between-images-with-css-in-loop-->
 <!--Mobile redirect src https://css-tricks.com/snippets/javascript/redirect-mobile-devices/-->
-<style>
-#playlist {
-   background: rgba(105, 95, 90, 0.7);
-   width: 600px;
-   padding: 10px;
-   margin-bottom: 0px;
-}
-audio {
-   background: rgba(120, 60, 60, 0.8);
-   width: 620px;
-   margin-top: 0px;
-}
-body {
-    background-color: linen;    
-    background-image: url("imgs/solva.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    margin: 0px 0px 0px 0px;
-}
-header {
-    Background: #FFG;
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-}
-h1 {
-   color: rgba(120, 60, 60, 0.9);
-   font-size: 300%;
-   font-family: "cambria", "baskerville", "calibri", serif;
-   font-variant: small-caps;
-   letter-spacing: 4px;
-   margin-bottom: 5px;
-   margin-top: 0px;
-}
-h5 {
-  color: rgb(90, 30, 30);
-  font-size: 1.50em;
-  text-decoration: none;
-  font-weight: normal;
-  letter-spacing: 0.5px;
-  font-family: "cambria", "baskerville", "calibri";
-  margin-bottom: 10px;
-  margin-top: -5px;
-}
-table {
-   background: rgba(50, 30, 30, 1.0);
-   height: 400px;
-   width: 80%;
-}
-td {
-   background-size: cover;
-   background-repeat: no-repeat;
-   spacing-left: 10px;
-   spacing-right: 10px;
-}
-td:hover {
-   background: rgba(120, 60, 60, 1.0);
-}
-p {
-   color: #FFD;
-   text-decoration: none;
-   font-size: 1.00em;
-   font-variant: small-caps;
-   letter-spacing: 5px;
-   margin-top: 1px;
-   margin-bottom: 1px;
-}
-hr {
-   color: white;
-   margin-top: 1px;
-   margin-bottom: 5px;
-}
-a {
-   color: white;
-   text-decoration: none;
-   font-size: 1.40em;
-   font-variant: small-caps;
-   letter-spacing: 5px;
-}
-a:visited {
-   color: white;
-   text-decoration: none;
-}
-a:hover {
-   color: white;
-   text-decoration: none;
-}
-a:active {
-   color: white;
-   text-decoration: none;
-}
-#subhead {
-   color: linen;
-   text-decoration: none;
-   font-size: 0.80em;
-   letter-spacing: 3px;
-   margin-bottom: 1px;
-}
-li.a {
-   color: white;
-   text-decoration: none;
-   font-size: 1.0em;
-   font-variant: small-caps;
-   letter-spacing: 5px;
-}
-</style>
 <script>
 var audio;
 var playlist;
@@ -177,31 +67,48 @@ if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i
 
 <header>
 <center>
-<h1>Jenny Ivas</h1><h5>Piano Tuition In Nottingham</h5>
-    <ul id="playlist" style="list-style: none;">
-        <li><p>Listen to Jenny and her students</p></li>
-<hr>
-        <li class="active"><a href="tracks/mozart%20sonata.wav" style="font-size:1.00em;"">Sonata Facile K.545 mvt. 1 - Mozart</a>
-        <br><p><div id="subhead">Performed by Aaron Connelly</div></p></li>
-
-    </ul>
-    <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
-        <source type="audio/mp3" src="tracks/mozart sonata.wav">
-        Sorry, your browser does not support HTML5 audio.
-    </audio>
-
+<h1>Jenny Ivas</h1>
 </center></header>
 <br>
 <center>
 <table>
 <tr>
-<td width="50%" background="imgs/piano.jpg"><center><h3><a href="home.html" target="_blank">Home</a></center></h3></td>
-<td width="50%" background="imgs/piano 2.jpg"><center><h3><a href="student exams.html" target="_blank">Student Exams</a></center></h3></td>
+<td class="one" width="50%"><center><h3><a href="home.html" target="_blank">Home</a></center></h3></td>
+<td class="two" width="50%"><center><h3><a href="student exams.html" target="_blank">Student Exams</a></center></h3></td>
 </tr> <tr>
-<td width="50%" background="imgs/piano 3.jpg"><center><h3><a href="about me.html" target="_blank">About Me</a></center></h3></td>
-<td width="50%" background="imgs/piano 4.jpg"><center><h3><a href="contact.html" target="_blank">Contact</a></center></h3></td>
+<td class="three" width="50%"><center><h3><a href="about me.html" target="_blank">About Me</a></center></h3></td>
+<td class="four" width="50%"><center><h3><a href="contact.html" target="_blank">Contact</a></center></h3></td>
 </tr>
-</table></center>
+</table>
+
+<div id="box">
+<ul id="playlist" style="list-style: none;"><div class="row"> 
+ <a href="#hide1" class="hide" id="hide1"><p>listen to performances by Jenny & her students</p><hr></a>
+ <a href="#show1" class="show" id="show1"><p>listen to performances by Jenny & her students</p><hr></a>
+ <div class="list">
+        <li class="active"><a class="track" href="tracks/Black%20Eyes.mp3">Black Eyes</a>
+        <br><p><div id="subhead">A Traditional Russian Folk Song - Performed by Jenny Ivas</div></p></li>
+<br>
+        <li class="active"><a class="track" href="tracks/Sorry%20Seems.mp3">Sorry Seems to be the Hardest Word - Elton John</a>
+        <br><p><div id="subhead">Performed by Jenny Ivas</div></p></li>
+<br>
+        <li class="active"><a class="track" href="tracks/Bruyeres.mp3">Bruyeres - Debussy</a>
+        <br><p><div id="subhead">Performed by Aaron Connelly</div></p></li>
+<br>
+        <li class="active"><p>view the complete collection of recordings on <a href="https://soundcloud.com/user-650568300">soundcloud</a></p></li>
+<br>
+
+    <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+        <source type="audio/mp3" src="tracks/Black Eyes.mp3">
+        Sorry, your browser does not support HTML5 audio.
+    </audio> 
+
+ </ul>
+ </div>
+ </div>
+
+</center>
+</div>
 
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
