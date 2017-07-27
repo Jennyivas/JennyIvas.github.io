@@ -17,7 +17,7 @@ audio {
 }
 body {
     background-color: linen;    
-    background-image: url("imgs/Sheets2.jpg");
+    background-image: url("imgs/sheets2.jpg");
     background-size: cover;
     background-repeat: repeat;
     padding-left: 0px;
@@ -35,8 +35,8 @@ header {
 }
 h1 {
    color: rgba(120, 60, 60, 0.9);
-   font-size: 590%;
-   font-family: "Edwardian Script ITC","cambria", "baskerville", "calibri", serif;
+   font-size: 550%;
+   font-family: "Edwardian Script ITC", "palace script MT", "Kunstler Script", "calibri", "cambria", serif;
    letter-spacing: 3px;
    margin-bottom: 20px;
    margin-top: 10px;
