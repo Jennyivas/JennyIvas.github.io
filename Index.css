@@ -36,7 +36,7 @@ header {
 h1 {
    color: rgba(120, 60, 60, 0.9);
    font-size: 550%;
-   font-family: "Edwardian Script ITC", "palace script MT", "Kunstler Script", "calibri", "cambria", serif;
+   font-family: "Edwardian Script ITC", "Snell Roundhand", "baskerville", "Kunstler Script", "calibri", "cambria", "helvetica";
    letter-spacing: 3px;
    margin-bottom: 20px;
    margin-top: 10px;
@@ -120,7 +120,7 @@ p {
    margin-bottom: 8px;
 }
 h3 {
-   Font-family: "Century Gothic", "Calibri";
+   Font-family: "Century Gothic", "Calibri", "futura", "Helvetica", "Arial";
    color: white;
    text-decoration: none;
    font-size: 1.2em;

@@ -20,6 +20,7 @@ header {
 }
 #container {
    width: 1260px;
+   background-color: #FEFEE;
 }
 h1.content {
    color: rgba(120, 60, 60, 0.9);
@@ -33,7 +34,7 @@ h1.content {
 h2 {
    color: rgba(160, 85, 85, 0.9);
    font-size: 250%;
-   font-family: "Century Gothic", "Sitka Display", "Calibri";
+   font-family: "Century Gothic", "futura", "Helvetica", "Sitka Display", "Calibri";
    letter-spacing: 2px;
    margin-top: 5px;
    margin-bottom: 5px;
@@ -42,7 +43,7 @@ h3 {
    color: white;
    font-size: 150%;
    letter-spacing: 2px;
-   font-family: "Century Gothic", "Sitka Display", "Calibri";
+   font-family: "Century Gothic", "futura", "Helvetica", "Sitka Display", "Calibri";
    letter-spacing: 2px;
    text-shadow: 2px 2px #777;
    padding-Top: 0px;
@@ -180,7 +181,7 @@ td.four:hover {
 }
 #note {
    background: rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
+   border-radius: 15px;
    margin-left: 64.5%;
    margin-right: 6px;
    width: 35%;
@@ -194,12 +195,13 @@ td.four:hover {
 #sidebar {
    width: 23%;
    height: 100%;
-   background: rgba(140, 140, 140, 1.0);
+   background: rgba(150, 150, 150, 0.8);
+   border-radius: 15px;
    padding-top: 5px;
    margin-left: 76%;
    margin-right: 6px;
    vertical-align: top;
-   margin-top: 0px;
+   margin-top: 80px;
    z-index: -1;
 }
 #wide {
@@ -220,6 +222,15 @@ a {
    font-size: 1.00em;
    font-variant: small-caps;
    letter-spacing: 5px;
+}
+a.nav {
+   color: white;
+   text-decoration: none;
+   font-size: 1.20em;
+   font-weight: normal;
+   font-variant: small-caps;
+   letter-spacing: 5px;
+   font-family:"century Gothic", "futura", "Helvetica";
 }
 a:visited {
    color: white;
