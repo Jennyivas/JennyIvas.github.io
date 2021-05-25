@@ -193,6 +193,7 @@ a {
 
 blockquote {
     font-family: var(--font-family-titles);
+    font-size: 1.2em;
 }
 
 /* Sticky footer styles */
