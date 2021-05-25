@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jenny Ivas is a piano teacher based in Nottingham offering piano lessons for students of all ages. Students can either learn with graded exams or simply by the pleasure of learning whatever they want to learn.">
+    <meta name="author" content="Aaron Connelly">
+    <meta name="keywords" content="Jenny, Ivas, Piano, teacher, tuition, ABRSM, nottingham, local, classical, student, exam, exams">
+    <title>Jenny Ivas - Piano Teacher</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</head>
+<body>
+    <header>
+        <center>
+            <h1 class="banner">Jenny Ivas</h1>
+            <hr />
+        </center>
+        <div align="right">
+            <a href="~/Index">
+                <img class="circle1" src="~/imgs/icons/Home.png" style="background-color: var(--color7);" />
+            </a>
+            <a href="~/Student Exams">
+                <img class="circle2" src="~/imgs/icons/Education.png" style="background-color: var(--color6);" />
+            </a>
+            <a href="~/About Me">
+                <img class="circle3" src="~/imgs/icons/Profile.png" style="background-color: var(--color5);" />
+            </a>
+            <a href="~/Contact">
+                <img class="circle4" src="~/imgs/icons/Contact.png" style="background-color: var(--color4);" />
+            </a>
+            <a href="http://soundcloud.com/user-650568300" target="_blank">
+                <img class="sc" src="~/imgs/icons/soundcloud.png" style="background-color: var(--color3);" />
+            </a>
+            <a href="http://gb.abrsm.org/en/our-exams/#" target="_blank">
+                <img class="abrsm" src="~/imgs/icons/ABRSM.png" style="background-color: var(--color1);" />
+            </a>
+        </div>
+        <center>
+            <h5 class="banner">Piano Tuition in Nottingham</h5>
+        </center>
+    </header>
+    <div align="right">
+        <div id="box3">
+            <blockquote class="review" id="review" style="top:0;"></blockquote>
+            <p class="reviewer" id="reviewer" style="bottom:0;right:0;"></p>
+        </div>
+    </div>
+    <div id="box2">
+        <h6>Lessons have now resumed. COVID safety guidelines remain in place until further notice</h6>
+    </div>
+    <div align="left">
+        <div id="box1">
+            <form>
+                <center>
+                    <input type="text" class="rightborder" id="Name" style="width:12VW;" placeholder="Name (required)" required />
+                    <input type="text" class="rightborder" id="Email" style="width:20VW;" placeholder="Email (required)" required />
+                    <input type="tel" id="Phone" style="width:10VW;" placeholder="Phone (optional)" /><br />
+                    <textarea class="border-top border-bottom" name="Message" rows="14" cols="10" wrap="soft" maxlength="1500" style="width:43VW;height:20VH;word-wrap:break-word;" placeholder="Message (required)" required></textarea>
+                </center>
+                <center><input type="button" value="Send an Email Enquiry" /></center>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+            <iframe scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/327532997&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" />
+    </footer>
+
+    <!--
+        <script type="text/javascript">
+            var sc_project = 11186544;
+            var sc_invisible = 1;
+            var sc_security = "61a67807";
+            var scJsHost = (("https:" == document.location.protocol) ?
+                "https://secure." : "http://www.");
+            document.write("<sc" + "ript type='text/javascript' src='" +
+                scJsHost +
+                "statcounter.com/counter/counter.js'></" + "script>");
+        </script>
+        <noscript>
+            <div class="statcounter">
+                <a title="shopify
+    analytics tool" href="http://statcounter.com/shopify/"
+                   target="_blank">
+                    <img class="statcounter"
+                         src="//c.statcounter.com/11186544/0/61a67807/1/"
+                         alt="shopify analytics tool">
+                </a>
+            </div>
+        </noscript>
+            -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
