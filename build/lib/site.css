@@ -191,6 +191,10 @@ a {
     color: #0366d6;
 }
 
+blockquote {
+    font-family: var(--font-family-titles);
+}
+
 /* Sticky footer styles */
 @media (min-width: 768px) {
     html {
