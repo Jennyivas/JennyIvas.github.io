@@ -26,16 +26,19 @@ body {
     position: relative;
 }
 #contactinfo, .contactinfo {
+    z-index: -1;
     position: relative;
     text-align: center;
     letter-spacing: 2px;
     color: var(--color8);
     height: 2em;
     width: 100%;
-    margin: 0 0 0 0;
+    margin-bottom: 0;
     padding-top: 5px;
+    transition: margin-top 0.3s;
 }
 header {
+    z-index: 1;
     padding: 3px 0px 3px 0px;
     background-image: url("../imgs/music.jpg");
     background-repeat: no-repeat;
@@ -74,6 +77,7 @@ img.sc, img.abrsm, img.circle1, img.circle2, img.circle3, img.circle4 {
     margin-right: 10px;
     margin-top: -5px;
     resize: unset;
+    transition: 0.15s ease-out;
 }
     img.circle1:hover {
         -webkit-box-shadow: 0px 0px 15px 5px var(--color7);

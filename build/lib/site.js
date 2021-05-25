@@ -1,4 +1,6 @@
-﻿function myFunction(xml) {
+﻿var xmlhttp;
+
+function myFunction(xml) {
     var tot = parseInt(xml.responseXML.getElementsByTagName("review")[0].childNodes.length - 1);
     var i = 0;
 
@@ -14,16 +16,6 @@
 
 }
 
-function showinfo() {
-    if (contact.style.display === "none") {
-        contact.style.display = "initial";
-    } else {
-        contact.style.display = "none";
-    }
-}
-
-var contact = document.getElementById('contactinfo');
-var xmlhttp;
 if (window.XMLHttpRequest) {
     xmlhttp = new XMLHttpRequest();
 } else {
