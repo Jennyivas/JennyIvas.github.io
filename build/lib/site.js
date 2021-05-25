@@ -29,7 +29,7 @@ if (window.XMLHttpRequest) {
 } else {
     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 }
-xmlhttp.open("GET", "../lib/Reviews.xml", true);    //configures the connection - async set to true
+xmlhttp.open("GET", "lib/Reviews.xml", true);    //configures the connection - async set to true
 xmlhttp.send();                                     //sends out the command to open the connection
 xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
