@@ -5,10 +5,16 @@ function myFunction(xml) {
     var i = 0;
 
     function reviews() {
-        document.getElementById('review').textContent = xml.responseXML.getElementsByTagName("comment")[i].textContent;
-        document.getElementById('reviewer').textContent = xml.responseXML.getElementsByTagName("author")[i].textContent;
-        if (i < (tot - 1)) { i++; } 
-        else { i = 0; }
+        try {
+            document.getElementById('review').textContent = xml.responseXML.getElementsByTagName("comment")[i].textContent;
+            document.getElementById('reviewer').textContent = xml.responseXML.getElementsByTagName("author")[i].textContent;
+            if (i < (tot - 1)) { i++; } 
+            else { i = 0; }
+        }
+        catch(err) {
+            document.getElementById('review').textContent = "Jenny has helped me learn music in way that I thought I couldn't. Jenny has made me feel welcome and has always been felixible with my lessons as I work shifts. Jenny is an excellent teacher and not to mention a great pianoist herself.";
+            document.getElementById('reviewer').textContent = "Charlene Mighten";
+        }
     }
 
     reviews();
