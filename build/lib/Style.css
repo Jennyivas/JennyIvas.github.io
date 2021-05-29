@@ -118,7 +118,7 @@ img.sc, img.abrsm, img.circle1, img.circle2, img.circle3, img.circle4 {
     }
 
 #box3, #box1 { /*use # when you know there will only be one instance of a class in the page - use . when you know there will be multiple instances of an element in the page*/
-    height: 35VH;
+    height: 28VH;
     position: relative;
     border: solid 10px rgba(0,0,255,0);
     background-color: rgba(255,0,255,0);
@@ -127,18 +127,12 @@ img.sc, img.abrsm, img.circle1, img.circle2, img.circle3, img.circle4 {
 }
 #box3 {
     width: 50%;
+    vertical-align: middle;
 }
 #box1 {
-    margin-top: -35VH;
+    margin-top: -28VH;
     margin-left: 50%;
 }
-#review, #reviewer {
-    position: absolute;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-}
-
 input[type=text], input[type=tel], textarea {
     border: 0px solid white;
     border-radius: 0px;
@@ -147,12 +141,15 @@ input[type=text], input[type=tel], textarea {
 input.rightborder {
     border-right: 1px solid red;
 }
-input[type=button] {
-    background-image: linear-gradient(to left, var(--color1), var(--color7));
-    border: solid red 1px;
-    border-radius: 10px;
+button[type=submit] {
+    border-top: none;
+    border-left-color: var(--color1);
+    border-bottom: none;
+    border-right-color: var(--color1);
+    border-width: 1px;
+    background: white;
+    padding: 0, 10px, 0, 10px;
 }
-
 h1, h2, h3, h4, h5, h6, li, .text {
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -185,16 +182,39 @@ h6 {
     vertical-align: central;
     display: inline-block;
 }
-
-a {
-    color: #0366d6;
+a, a:hover, a:active, a:visited {
+    color: red;
 }
-
-blockquote {
+#review {
     font-family: var(--font-family-titles);
     font-size: 1.2em;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: var(--color8);
 }
-
+#reviewer {
+    margin-left: 5px;
+    margin-right: 5px;
+    position: static;
+}
+.finishLine {
+    width: 100%;
+    max-height: 1vh;
+    background: white;
+}
+blockquote:before {
+    content: '\ \201C';
+    background: rgba(0,0,0,0);
+    font-size: 1.5em;
+    color: var(--color8);
+  }
+  blockquote:after {
+    content: '\ \201D';
+    text-align: right;
+    font-size: 1.5em;
+    color: var(--color8);
+  }
 /* Sticky footer styles */
 @media (min-width: 768px) {
     html {
@@ -215,7 +235,6 @@ button.accept-policy {
     font-size: 1rem;
     line-height: inherit;
 }
-
 .footer {
     position: sticky;
     bottom: 0;
