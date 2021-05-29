@@ -183,7 +183,8 @@ h6 {
     display: inline-block;
 }
 a, a:hover, a:active, a:visited {
-    color: red;
+    color: blue;
+    text-decoration: underline;
 }
 #review {
     font-family: var(--font-family-titles);
