@@ -1,4 +1,5 @@
 ﻿:root {
+    --M: 38px;
     --color1: rgb(238,50,38);
     --color2: rgb(180,85,85);
     --color3: rgb(255,89,0);
@@ -25,9 +26,8 @@ body {
     position: relative;
 }
 #Mcontainer {
-    margin-top: 2em;
-    margin-bottom: 14VH;
-    position: relative;
+    width: 95%;
+    vertical-align: central;
 }
 #contactinfo, .contactinfo {
     z-index: -1;
@@ -62,12 +62,6 @@ h1.banner {
     margin-top: 0px;
     margin-bottom: 5px;
 }
-h1.Mbanner {
-    font-size: 350%;
-    font-weight: 400;
-    font-family: var(--font-family-titles);
-    letter-spacing: 2px;
-}
 h5.banner {
     color: var(--color8);
     font-size: 1.50em;
@@ -93,8 +87,8 @@ img.sc, img.abrsm, img.circle1, img.circle2, img.circle3, img.circle4 {
     transition: 0.15s ease-out;
 }
 img.Msc, img.Mabrsm, img.Mcircle1, img.Mcircle2, img.Mcircle3, img.Mcircle4 {
-    width: 35px;
-    height: 35px;
+    width: var(--M);
+    height: var(--M);
     border-radius: 100px;
     margin-right: 10px;
     margin-top: 0px;
