@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../lib/Style.css" />
     <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
     <script>
+        var width;
+        if (screen.width <= screen.height) {
+            width = screen.width / 7 + 'px';
+        } else { width = screen.height / 7 + 'px'; }
         document.documentElement.style.setProperty('--color1', 'rgb(238,50,38)');
         document.documentElement.style.setProperty('--color2', 'rgb(180,85,85)');
         document.documentElement.style.setProperty('--color3', 'rgb(255,89,0)');
@@ -18,21 +22,21 @@
         document.documentElement.style.setProperty('--color6', 'rgb(255,209,0)');
         document.documentElement.style.setProperty('--color7', 'rgb(255,242,0)');
         document.documentElement.style.setProperty('--color8', 'rgb(90,30,30)');
+        document.documentElement.style.setProperty('--M', width);
     </script>
 </head>
 <body>
     <center>
-        <h1 class="Mbanner">Jenny Ivas</h1>
+        <h1 class="banner">Jenny Ivas</h1>
         <a href="index.html">
-            <img class="Mcircle1" src="../imgs/icons/Home.png" style="background-color: var(--color7);" />
+            <img class="Mcircle2" src="../imgs/icons/Home.png" style="background-color: var(--color7);" />
         </a>
         <a href="Exams.html">
-            <img class="Mcircle2" src="../imgs/icons/Education.png" style="background-color: var(--color6);" />
+            <img class="Mcircle3" src="../imgs/icons/Education.png" style="background-color: var(--color6);" />
         </a>
         <a href="About.html">
-            <img class="Mcircle3" src="../imgs/icons/Profile.png" style="background-color: var(--color5);" />
+            <img class="Mcircle4" src="../imgs/icons/Profile.png" style="background-color: var(--color5);" />
         </a>
-        <img class="Mcircle4" src="../imgs/icons/Contact.png" style="background-color: var(--color4);" onclick="showinfo()" />
         <a href="http://soundcloud.com/user-650568300" target="_blank">
             <img class="Msc" src="../imgs/icons/soundcloud.png" style="background-color: var(--color3);" />
         </a>
@@ -44,9 +48,7 @@
             <span class="reviewer" id="reviewer">Charlene Mighten</span>
         </div>
     </center>
-    <br />
-
-    <div class="Mcontainer">
+    <div class="Mcontainer" align="center">
         <main role="main" class="pb-3">
             <center><h2>Welcome</h2></center>
             <br />
