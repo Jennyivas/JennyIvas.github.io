@@ -57,6 +57,12 @@ h1.banner {
     margin-top: 0px;
     margin-bottom: 5px;
 }
+h1.Mbanner {
+    font-size: 350%;
+    font-weight: 400;
+    font-family: var(--font-family-titles);
+    letter-spacing: 2px;
+}
 h5.banner {
     color: var(--color8);
     font-size: 1.50em;
@@ -134,6 +140,14 @@ img.sc, img.abrsm, img.circle1, img.circle2, img.circle3, img.circle4 {
     margin-top: -28VH;
     margin-left: 50%;
 }
+#boxM {
+    height: 30VH;
+    position: relative;
+    border: solid 10px rgba(0,0,255,0);
+    background-color: rgba(255,0,255,0);
+    width: 90%;
+    vertical-align: middle;
+}
 input[type=text], input[type=tel], textarea {
     border: 0px solid white;
     border-radius: 0px;
@@ -150,6 +164,23 @@ button[type=submit] {
     border-width: 1px;
     background: white;
     padding: 0, 10px, 0, 10px;
+}
+h2.Mtext {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.1;
+    font-family: var(--font-family-sans-serif);
+    color: var(--color8);
+}
+p.Mtext {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 1.1;
+    font-family: var(--font-family-sans-serif);
+    color: var(--color8);
 }
 h1, h2, h3, h4, h5, h6, li, .text {
     margin-top: 0;
@@ -192,6 +223,12 @@ a, a:hover, a:active, a:visited {
     font-size: 1.2em;
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
+    color: var(--color8);
+}
+#Mreview {
+    font-family: var(--font-family-titles);
+    font-size: 1em;
     text-align: center;
     color: var(--color8);
 }
