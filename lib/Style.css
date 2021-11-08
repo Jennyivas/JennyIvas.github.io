@@ -24,6 +24,11 @@ body {
     margin-bottom: 14VH;
     position: relative;
 }
+#Mcontainer {
+    margin-top: 2em;
+    margin-bottom: 14VH;
+    position: relative;
+}
 #contactinfo, .contactinfo {
     z-index: -1;
     margin-top: -2em;
@@ -87,6 +92,14 @@ img.sc, img.abrsm, img.circle1, img.circle2, img.circle3, img.circle4 {
     resize: unset;
     transition: 0.15s ease-out;
 }
+img.Msc, img.Mabrsm, img.Mcircle1, img.Mcircle2, img.Mcircle3, img.Mcircle4 {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-top: 0px;
+    resize: unset;
+}
     img.circle1:hover {
         -webkit-box-shadow: 0px 0px 15px 5px var(--color7);
         -moz-box-shadow: 0px 0px 15px 5px var(--color7);
@@ -94,34 +107,34 @@ img.sc, img.abrsm, img.circle1, img.circle2, img.circle3, img.circle4 {
         transition: 0.2s ease-out;
     }
     img.circle2:hover {
-        -webkit-box-shadow: 0px 0px 15px 5px var(--color6);
-        -moz-box-shadow: 0px 0px 15px 5px var(--color6);
-        box-shadow: 0px 0px 15px 5px var(--color6);
-        transition: 0.2s ease-out;
+    -webkit-box-shadow: 0px 0px 15px 5px var(--color6);
+    -moz-box-shadow: 0px 0px 15px 5px var(--color6);
+    box-shadow: 0px 0px 15px 5px var(--color6);
+    transition: 0.2s ease-out;
     }
     img.circle3:hover {
-        -webkit-box-shadow: 0px 0px 15px 5px var(--color5);
-        -moz-box-shadow: 0px 0px 15px 5px var(--color5);
-        box-shadow: 0px 0px 15px 5px var(--color5);
-        transition: 0.2s ease-out;
+    -webkit-box-shadow: 0px 0px 15px 5px var(--color5);
+    -moz-box-shadow: 0px 0px 15px 5px var(--color5);
+    box-shadow: 0px 0px 15px 5px var(--color5);
+    transition: 0.2s ease-out;
     }
     img.circle4:hover {
-        -webkit-box-shadow: 0px 0px 15px 5px var(--color4);
-        -moz-box-shadow: 0px 0px 15px 5px var(--color4);
-        box-shadow: 0px 0px 15px 5px var(--color4);
-        transition: 0.2s ease-out;
+    -webkit-box-shadow: 0px 0px 15px 5px var(--color4);
+    -moz-box-shadow: 0px 0px 15px 5px var(--color4);
+    box-shadow: 0px 0px 15px 5px var(--color4);
+    transition: 0.2s ease-out;
     }
     img.sc:hover {
-        -webkit-box-shadow: 0px 0px 15px 5px var(--color3);
-        -moz-box-shadow: 0px 0px 15px 5px var(--color3);
-         box-shadow: 0px 0px 15px 5px var(--color3);
-         transition: 0.2s ease-out;
+    -webkit-box-shadow: 0px 0px 15px 5px var(--color3);
+    -moz-box-shadow: 0px 0px 15px 5px var(--color3);
+    box-shadow: 0px 0px 15px 5px var(--color3);
+    transition: 0.2s ease-out;
     }
     img.abrsm:hover {
-        -webkit-box-shadow: 0px 0px 15px 5px var(--color1);
-        -moz-box-shadow: 0px 0px 15px 5px var(--color1);
-        box-shadow: 0px 0px 15px 5px var(--color1);
-        transition: 0.2s ease-out;
+    -webkit-box-shadow: 0px 0px 15px 5px var(--color1);
+    -moz-box-shadow: 0px 0px 15px 5px var(--color1);
+    box-shadow: 0px 0px 15px 5px var(--color1);
+    transition: 0.2s ease-out;
     }
 
 #box3, #box1 { /*use # when you know there will only be one instance of a class in the page - use . when you know there will be multiple instances of an element in the page*/
@@ -141,11 +154,11 @@ img.sc, img.abrsm, img.circle1, img.circle2, img.circle3, img.circle4 {
     margin-left: 50%;
 }
 #boxM {
-    height: 30VH;
+    height: 32VH;
     position: relative;
     border: solid 10px rgba(0,0,255,0);
     background-color: rgba(255,0,255,0);
-    width: 90%;
+    width: 100%;
     vertical-align: middle;
 }
 input[type=text], input[type=tel], textarea {
@@ -164,23 +177,6 @@ button[type=submit] {
     border-width: 1px;
     background: white;
     padding: 0, 10px, 0, 10px;
-}
-h2.Mtext {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 1.1;
-    font-family: var(--font-family-sans-serif);
-    color: var(--color8);
-}
-p.Mtext {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: 400;
-    line-height: 1.1;
-    font-family: var(--font-family-sans-serif);
-    color: var(--color8);
 }
 h1, h2, h3, h4, h5, h6, li, .text {
     margin-top: 0;
