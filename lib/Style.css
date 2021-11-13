@@ -28,6 +28,8 @@ body {
 #Mcontainer {
     width: 95%;
     vertical-align: central;
+    position: relative;
+    margin-top: 5px;
 }
 #contactinfo, .contactinfo {
     z-index: -1;
@@ -71,6 +73,15 @@ h5.banner {
     font-family: var(--font-family-titles);
     margin-bottom: 23px;
     margin-top: -45px;
+}
+h5.foot {
+    color: var(--color8);
+    font-size: 1.50em;
+    text-decoration: none;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    font-family: var(--font-family-titles);
+    text-align: center;
 }
 hr {
     position:relative;
@@ -154,6 +165,7 @@ img.Msc, img.Mabrsm, img.Mcircle1, img.Mcircle2, img.Mcircle3, img.Mcircle4 {
     background-color: rgba(255,0,255,0);
     width: 100%;
     vertical-align: middle;
+    background-color: rgba(255,255,255,0.7);
 }
 input[type=text], input[type=tel], textarea {
     border: 0px solid white;
@@ -272,6 +284,11 @@ button.accept-policy {
     z-index: 1;
     background-color: white;
     border-color: #00FFFFFF;
+}
+#mfooter {
+    position: absolute;
+    bottom: 0;
+    height: 3LH;
 }
 iframe {
     width: 100%;
